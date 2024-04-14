@@ -21,8 +21,6 @@ public partial class HangHoa
 
     public decimal GiamGia { get; set; }
 
-    public int SoLanXem { get; set; }
-
     public string? MoTa { get; set; }
 
     public string MaNcc { get; set; } = null!;
