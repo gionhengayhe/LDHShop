@@ -1,6 +1,6 @@
 ﻿namespace LDHShop.Repositories
 {
-	public class EFNhanVienRepository
+	public class EFNhanVienRepository : INhanVienRepository
 	{
 
 	}

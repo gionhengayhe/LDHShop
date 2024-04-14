@@ -131,7 +131,7 @@
 
 
 
-    // Product Quantity
+    // HangHoa Quantity
     $('.quantity button').on('click', function () {
         var button = $(this);
         var oldValue = button.parent().parent().find('input').val();

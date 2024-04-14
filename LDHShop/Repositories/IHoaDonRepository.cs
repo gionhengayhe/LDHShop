@@ -1,6 +1,6 @@
 ﻿namespace LDHShop.Repositories
 {
-	public class IHoaDonRepository
+	public interface IHoaDonRepository
 	{
 	}
 }

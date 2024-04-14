@@ -102,7 +102,7 @@ public partial class ApplicationDbContext : DbContext
             entity.HasOne(d => d.MaHhNavigation).WithMany(p => p.ChiTietHds)
                 .HasForeignKey(d => d.MaHh)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_OrderDetails_Products");
+                .HasConstraintName("FK_OrderDetails_HangHoas");
         });
 
         modelBuilder.Entity<ChuDe>(entity =>
@@ -180,7 +180,7 @@ public partial class ApplicationDbContext : DbContext
 
         modelBuilder.Entity<HangHoa>(entity =>
         {
-            entity.HasKey(e => e.MaHh).HasName("PK_Products");
+            entity.HasKey(e => e.MaHh).HasName("PK_HangHoas");
 
             entity.ToTable("HangHoa");
 
@@ -201,11 +201,11 @@ public partial class ApplicationDbContext : DbContext
 
             entity.HasOne(d => d.MaLoaiNavigation).WithMany(p => p.HangHoas)
                 .HasForeignKey(d => d.MaLoai)
-                .HasConstraintName("FK_Products_Categories");
+                .HasConstraintName("FK_HangHoas_Categories");
 
             entity.HasOne(d => d.MaNccNavigation).WithMany(p => p.HangHoas)
                 .HasForeignKey(d => d.MaNcc)
-                .HasConstraintName("FK_Products_Suppliers");
+                .HasConstraintName("FK_HangHoas_Suppliers");
         });
 
         modelBuilder.Entity<HinhThucThanhToan>(entity =>

@@ -1,6 +1,7 @@
 ﻿namespace LDHShop.Repositories
 {
-	public interface IKhachHangRepository
+	public class ILoaiRepository
 	{
+
 	}
 }

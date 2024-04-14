@@ -1,6 +1,6 @@
 ﻿namespace LDHShop.Repositories
 {
-	public class EFKhachHangRepository
+	public class EFKhachHangRepository : IKhachHangRepository
 	{
 	}
 }
